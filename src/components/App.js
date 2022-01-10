@@ -11,7 +11,7 @@ const App=()=>{
     return(
         <BrowserRouter>            
             <Routes>
-                <Route path="/" element={<ProductListScreen />} />
+                <Route path="/e-shop" element={<ProductListScreen />} />
                 <Route path="/product/:id" element={<SingleProductScreen />} />
                 <Route path="/product/category/:cat_name" element={<SingleCategoryScreen />} />
                 <Route path="/admin" element={<AdminRoomScreen />} />
