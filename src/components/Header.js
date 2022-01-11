@@ -10,7 +10,7 @@ const Header=()=>{
             <Row className="nav-section">
                 <Col lg={3} xs={3} className="logo-div">
                     <h4>
-                        <Link to="/" className="header-heading-link">E-Shop</Link>
+                        <Link to="/e-shop" className="header-heading-link">E-Shop</Link>
                     </h4>
                 </Col>
                 <Col lg={6} xs={5} className="search-div">
