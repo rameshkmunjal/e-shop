@@ -101,7 +101,7 @@ body{
 }
 /* product-list-container styling */
 .product-list-container{
-    padding-top:40px;
+    padding:40px 0px;
     background:#efefef;
 }
 .card-div{
@@ -159,7 +159,8 @@ body{
 }
 /* Single Product Screen styling */
 .single-product-div{
-    margin:100px auto;
+    margin:50px auto;
+    margin-bottom:50px;
 }
 .img-div{
     padding-bottom:50px;

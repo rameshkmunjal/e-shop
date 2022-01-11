@@ -2,6 +2,7 @@ import React from 'react';
 import {Col, Card} from 'react-bootstrap';
 import {useNavigate} from 'react-router-dom';
 
+
 const Product=({product})=>{
     const navigate=useNavigate();
 
@@ -11,6 +12,7 @@ const Product=({product})=>{
         navigate(`/product/${id}`);
     }
     return(
+        
         <Col  lg={3} onClick={(e)=>onSelectProduct(e, product.id)}>
             <div className="card-div">
                 <Card.Img variant="top" src={product.image} className="card-image" />
@@ -25,6 +27,7 @@ const Product=({product})=>{
                 </Card.Body>
             </div>
         </Col>
+        
     )
 }
 

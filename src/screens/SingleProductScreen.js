@@ -3,6 +3,8 @@ import { useSelector, useDispatch } from 'react-redux';
 import {useParams} from 'react-router-dom';
 import {Container, Row, Col} from 'react-bootstrap';
 import { listProductDetails } from '../actions/productActions';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const SingleProductScreen=()=>{
     const {id}=useParams();
@@ -13,6 +15,8 @@ const SingleProductScreen=()=>{
     
     dispatch(listProductDetails(product));
     return(
+        <>
+        <Header />
         <Container>
             <Row>
                 <Col className="single-product-div" lg={6}>
@@ -28,12 +32,11 @@ const SingleProductScreen=()=>{
                         <button className="buy-now-btn">Buy Now</button>
                         <button className="add-to-cart-btn">Add To Cart</button>
                     </div>
-
                 </Col>
             </Row>
         </Container>
-        
-        
+          <Footer />
+        </>  
     )
 
 }
